@@ -21,7 +21,7 @@ def create_vector_db():
     database using the loaded data, and saves the vector database locally.
     """
     # Load data from FAQ sheet
-    loader = CSVLoader(file_path='codebasics_faqs.csv', source_column="prompt")
+    loader = CSVLoader(file_path='faqs.csv', source_column="prompt")
     data = loader.load()
 
     # Create a FAISS instance for vector database from 'data'
